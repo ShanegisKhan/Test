@@ -1,10 +1,16 @@
 #include <stdio.h>
 
-int main()
+int main(int argc, char *argv[])
 {
-    int i;
+    int i, count;
     
-    for(i = 1; i <= 100; i++) {
+    if(argc < 2) {
+        printf("You require an argument.\n");
+        return 1;
+    } else {
+        count = atoi(argv[1]);
+    }
+    for(i = 1; i <= count; i++) {
         if(i % 3 == 0 && i % 5 == 0) {
             printf("fizzbuzz\n");
         } else if(i % 3 == 0) {
