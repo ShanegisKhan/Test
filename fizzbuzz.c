@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
     if(argc < 2) {
         printf("You require an argument.\n");
         return 1;
-    } 
+    }
     count = atoi(argv[1]);
     
     for(i = 1; i <= count; i++) {
@@ -15,11 +15,11 @@ int main(int argc, char *argv[])
             printf("fizzbuzz\n");
         } else if(i % 3 == 0) {
             printf("fizz\n");
-        } else if(i % 5 == 0) { 
+        } else if(i % 5 == 0) {
             printf("buzz\n");
         } else {
             printf("%d\n", i);
         }
     }
     return 0;
-}   
+}
